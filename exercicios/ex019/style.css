@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+body {
+    background-color: #94D7F2;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    color:#2181A8;
+}
+
+/* eu posso colocar o h1 na frente ficando h1#principal, mas eu posso colocar apenas #principal */
+/* em html é id e em css é # ("só pode um elemento")*/
+/* em html é class em css é . ("pode vários elementos")*/
+h1#principal {
+    text-align: center;
+    background-color: #2B4E5C;
+    color: white;
+    /* OBS: SE EU JÁ USEI UM ID PRINCIPAL N Ã O POSSO USAR OUTRO */
+}
+
+h2 {
+    color: #2BA8D9;
+}
+
+.basico {
+    color: #2BA8D9;
+}
+
+.intermediario {
+    color: #88a539;
+}
+
+.avancado {
+    color: #df4c4cb7;
+}
+
+.destaque {
+    background-color: #abb15c7a;
+}

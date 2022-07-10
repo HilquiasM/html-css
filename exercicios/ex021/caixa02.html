@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping tags</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: dimgray;
+            margin: 0px;
+        }
+
+        header {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        h1 {
+            box-shadow: 2px 2px 10px 1px rgba(0, 0, 0, 0.397);
+        }
+
+        nav {
+            background-color: rgb(56, 56, 56);
+            padding: 3px;
+
+            /* deslocamento vertical, horizontal, espalhamento, distância e cor da sombra */
+            box-shadow: 5px 3px 10px 1px rgba(0, 0, 0, 0.473);
+        }
+
+        nav > a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-right: 30px;
+        }
+
+        nav > a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 20px 0px;
+            box-shadow: 4px 4px 9px 0px rgba(0, 0, 0, 0.329);
+        }
+
+        article {
+            background-color: lightgray;
+        }
+
+        article > aside {
+            background-color: rgb(119, 119, 119);
+            padding: 5px;
+        }
+
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 4px;
+            margin: 0px;
+        }
+
+        footer > p {
+            margin: 0px;
+        }
+
+        div#bola {
+            height: 100px;
+            width: 100px;
+            margin: 10px;
+            background-color: white;
+            border-radius: 50%;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- Isso tudo é uma div só que divs semânticas (o que é bem melhor) -->
+
+    <!-- cabeçalho -->
+    <header>
+        <h1>Meu Site</h1>
+        <!-- se quiser criar um menu -->
+        <nav>
+            <a href="#">a</a>
+            <a href="#">a</a>
+            <a href="#">a</a>
+            <a href="#">a</a>
+            <a href="#">a</a>
+        </nav>
+    </header>
+
+    <!-- conteúdo principal -->
+    <main>
+        <section id="assuntos">
+            <p>Esportes, política e tecnologia</p>
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Notícia sobre o Brasil</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi, earum commodi! Quo impedit provident itaque quae numquam consequatur est odio repellendus, commodi alias nobis accusantium! Corporis dolore ex officiis sint.</p>
+                <aside>
+                    <p>Artigo escrito por José da Silva</p>
+                </aside>
+            </article>
+        </section>
+    </main>
+
+    <!-- rodapé -->
+    <footer>
+        <p>Desenvolvido por Curso em Vídeo</p>
+    </footer>
+    <div id="bola"></div>
+</body>
+</html>

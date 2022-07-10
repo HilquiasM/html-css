@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HMTL5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>tente abrir esse site em diversos dispositivos diferentes ou simplesmente aumente ou diminua o tamanho do seu navegador</p>
+    <!-- aqui a gente vai falar vai aparecer uma imagem -->
+    <picture>
+        <!-- se for colocar outro source precisa ser acima do colocado anteriormente tipo: 1°G 2°M 3°P -->
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <!-- Coloque a largura máxima -->
+        <!-- Se ele chegar a menos que mil ele vai carregar a foto m OBS: sempre coloque 50 px a mais -->
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="imagem grande">
+    </picture>
+
+    <h1>Reproduzindo áudio</h1>
+    <p>vamos aprender a reproduzir áudio em HMTL5</p>
+    <!-- Primeira maneira de colocar o áudio BEM SIMPLES -->
+    <!-- <audio src="media/happy-mistake.mp3" controls autoplay>música de bebe kk</audio> -->
+    <!-- MP3 WAV OGG -->
+
+    <audio preload="auto" autoplay controls loop>
+        <!-- Aqui está a importância da ordem, porque primeiro ele vai tentar carregar o MP3 depois OGG depois WAV -->
+        <source src="media/guanacast-33.mp3" type="audio/mpeg">
+        <source src="media/guanacast-33.ogg" type="audio/ogg">
+        <!-- é o mais pesado de todos evita usar ele -->
+        <source src="media/guanacast-33.wav" type="audio/wav">
+        <!-- essa mensagem só vai aparecer se nenhum caso acima tenha sido compatível -->
+        <p>infelizmente o seu navegador não consegue produzir áudio baixe o áudio <a href="media/guanacast-33.mp3" download="guanacast-33" type="application/mpeg">guanacast-33</a></p>
+    </audio>
+    
+</body>
+</html>

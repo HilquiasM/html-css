@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+</head>
+<body>
+    <h1>Usando Links externos</h1>
+    <!-- Porém quando o usuário acessa o site externo o mesmo sobrepõe o seu então use os códigos abaixo, se for links do seu site não precisa usar -->
+    <p>Você pode acessar o meu <a href="https://github.com/HilquiasM/Hilquias/pulls" target="_blank" rel="external">repositório público no github</a></p>
+    <p>Você também pode acessar o <a href="https://www.youtube.com" target="_blank" rel="external">meu canal do YouTube</a></p>
+
+    <h1>Usando links internos</h1>
+    <!-- está página vai funcionar se os dois index estiver na mesma página -->
+    <p>Está é a primeira página do site, se você quiser acessar a nossa segunda página <a href="pag002.html" target="_self" rel="next">clique aqui</a></p>
+    <p>Você também pode acessar a nossa <a href="notícias/pag003.html" target="_self" rel="next">página de notícias</a></p>
+
+    <h1>Links para Download</h1>
+    <ul>
+        <!-- # significa que é um link vazio -->
+        <!-- Tem que colocar esse type e esse download para conseguir fazer o download direto sem entrar em outra página -->
+        <li><a href="livro/Trabalho - Lobato.pdf" download="Trabalho - Lobato.pdf" type="application/pdf">Baixar o livro PDF</a></li>
+        <!-- usa a compactação para arquivos grandes -->
+        <li><a href="livro/Trabalho - Lobato.zip" download="Trabalho - Lobato.zip" type="application/zip">Livro compactado em ZIP</a></li>
+    </ul>
+</body>
+</html>
