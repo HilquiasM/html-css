@@ -4,21 +4,33 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fundo fixo de tela</title>
     <style>
         body {
             height: 97vh;
-            background-color: black;
+            /* background-color: black;
             background-image: url('imagens/wallpaper002.jpg');
             background-position: center top;
             background-repeat: no-repeat;
-            /* o cover cobre toda a tela e não deixa borda mesmo se você mudar a resoulução, também tem o contain porém ele deixa borda, também tem os valores em porcentagem tipo 100% *tudo depende do que você está precisando* */
+
+            o cover cobre toda a tela e não deixa borda mesmo se você mudar a resoulução, também tem o contain porém ele deixa borda, também tem os valores em porcentagem tipo 100% *tudo depende do que você está precisando* 
+            background-size: cover;
+            background-attachment: fixed; 
+
+            Shorthand backgound 
+            
+            color > image > position > repeat > [size] > attachment
+
+            OBS: o cover dentro desse shorthand não funcionada então tem que usar ele fora
+            */
+
+            background: black url('imagens/wallpaper002.jpg') center center no-repeat fixed;
             background-size: cover;
         }
 
         main {
             background-color: white;
-            width: 400px;
+            max-width: 400px;
             padding: 10px;
             margin: auto;
             border: 1px solid darkblue;
