@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+
+        table {
+            width: 500px;
+            border-collapse: collapse;
+            position: relative;
+        }
+
+        td, th {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+
+        thead, tfoot{
+            background-color: gray;
+            color: white;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: gray;
+        }
+
+        /* você pode colocar odd e even (que é par e impar) ou 2n */
+        tbody > tr:nth-child(even) {
+            background-color: lightgray;
+        }
+
+        /*  e aqui 2n - 1 */
+        tbody > tr:nth-child(odd) {
+            background-color: lightsalmon;
+            font-weight: bold;
+        }
+
+        td.num {
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+
+    <!-- Anatmoia de tabelas grandes 
+         Table
+            caption
+            Thead
+                tr, td, th
+            Tbody
+                tr, td, th
+            Tfoot
+                tr, td, th
+    -->
+
+    <table>
+        <caption>População das Unidades Federativas</caption>
+        <thead>
+            <!-- o scope ajuda o navegador a fazer sentido nos dados da tabela  -->
+            <th scope="col">Estado</th>
+            <th scope="col" style="width: 50px;">População</th>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45 919 049</td>
+            </tr>
+
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21 168 791</td>
+            </tr>
+
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17 264 943</td>
+            </tr>
+
+            <tr>
+                <td>Bahia</td>
+                <td>14 873 064</td>
+            </tr>
+
+            <tr>
+                <td>Paraná</td>
+                <td>11 433 957</td>
+            </tr>
+
+            <tr>
+                <td>Rio Grande do sul</td>
+                <td>11 377 239</td>
+            </tr>
+
+            <tr>
+                <td>Pernanbuco</td>
+                <td>000</td>
+            </tr>
+
+            <tr>
+                <td>Ceará</td>
+                <td>000</td>
+            </tr>
+
+            <tr>
+                <td>Pará</td>
+                <td>000</td>
+            </tr>
+
+            <tr>
+                <td>Santa Catarina</td>
+                <td>000</td>
+            </tr>
+
+            <tr>
+                <td>Maranhão</td>
+                <td>000</td>
+            </tr>
+
+            <tr>
+                <td>Goiás</td>
+                <td>000</td>
+            </tr>
+
+            <tr>
+                <td>Amazonas</td>
+                <td>000</td>
+            </tr>
+
+            <tr>
+                <td>Espírito Santo</td>
+                <td>000</td>
+            </tr>
+
+            <tr>
+                <td>Paraíba</td>
+                <td>000</td>
+            </tr>
+
+            <tr>
+                <td>Rio Grande do Norte</td>
+                <td>000</td>
+            </tr>
+
+            <tr>
+                <td>Mato Grosso</td>
+                <td>000</td>
+            </tr>
+
+            <tr>
+                <td>Alagoas</td>
+                <td>000</td>
+            </tr>
+
+            <tr>
+                <td>Piauí</td>
+                <td>000</td>
+            </tr>
+
+            <tr>
+                <td>Distrito Federal</td>
+                <td>000</td>
+            </tr>
+
+            <tr>
+                <td>Mato Grosso do Sul</td>
+                <td>000</td>
+            </tr>
+
+        </tbody>
+        <tfoot>
+            <th scope="row">Total de habitantes</th>
+            <td class="num"><stong>00000000</stong></td>
+        </tfoot>
+    </table>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat ipsa fugit esse odio magni quia delectus inventore nemo voluptate! Labore veritatis doloremque, atque neque itaque voluptates facere impedit molestias alias? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus debitis maiores nesciunt animi deleniti pariatur placeat saepe doloremque, totam, ipsam repudiandae laudantium consequuntur. Natus doloremque cupiditate laboriosam vitae ipsa fugiat. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda deserunt laudantium dolore reiciendis perferendis enim, nihil ipsam tenetur eligendi sequi, explicabo officia aliquid veritatis molestias iste quia voluptatibus. Culpa, cumque. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque dolore voluptatum accusamus rerum aspernatur molestias dolorem quos. Facilis doloremque illo aliquid sed, placeat, debitis corporis, quo repellat harum labore id! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum ad delectus, accusantium deleniti minima nulla dicta nihil dolor, aliquid vel unde impedit ducimus! Porro ut, adipisci odit tempora qui vero.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat ipsa fugit esse odio magni quia delectus inventore nemo voluptate! Labore veritatis doloremque, atque neque itaque voluptates facere impedit molestias alias? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus debitis maiores nesciunt animi deleniti pariatur placeat saepe doloremque, totam, ipsam repudiandae laudantium consequuntur. Natus doloremque cupiditate laboriosam vitae ipsa fugiat. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda deserunt laudantium dolore reiciendis perferendis enim, nihil ipsam tenetur eligendi sequi, explicabo officia aliquid veritatis molestias iste quia voluptatibus. Culpa, cumque. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque dolore voluptatum accusamus rerum aspernatur molestias dolorem quos. Facilis doloremque illo aliquid sed, placeat, debitis corporis, quo repellat harum labore id! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum ad delectus, accusantium deleniti minima nulla dicta nihil dolor, aliquid vel unde impedit ducimus! Porro ut, adipisci odit tempora qui vero.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat ipsa fugit esse odio magni quia delectus inventore nemo voluptate! Labore veritatis doloremque, atque neque itaque voluptates facere impedit molestias alias? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus debitis maiores nesciunt animi deleniti pariatur placeat saepe doloremque, totam, ipsam repudiandae laudantium consequuntur. Natus doloremque cupiditate laboriosam vitae ipsa fugiat. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda deserunt laudantium dolore reiciendis perferendis enim, nihil ipsam tenetur eligendi sequi, explicabo officia aliquid veritatis molestias iste quia voluptatibus. Culpa, cumque. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque dolore voluptatum accusamus rerum aspernatur molestias dolorem quos. Facilis doloremque illo aliquid sed, placeat, debitis corporis, quo repellat harum labore id! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum ad delectus, accusantium deleniti minima nulla dicta nihil dolor, aliquid vel unde impedit ducimus! Porro ut, adipisci odit tempora qui vero.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat ipsa fugit esse odio magni quia delectus inventore nemo voluptate! Labore veritatis doloremque, atque neque itaque voluptates facere impedit molestias alias? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus debitis maiores nesciunt animi deleniti pariatur placeat saepe doloremque, totam, ipsam repudiandae laudantium consequuntur. Natus doloremque cupiditate laboriosam vitae ipsa fugiat. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda deserunt laudantium dolore reiciendis perferendis enim, nihil ipsam tenetur eligendi sequi, explicabo officia aliquid veritatis molestias iste quia voluptatibus. Culpa, cumque. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque dolore voluptatum accusamus rerum aspernatur molestias dolorem quos. Facilis doloremque illo aliquid sed, placeat, debitis corporis, quo repellat harum labore id! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum ad delectus, accusantium deleniti minima nulla dicta nihil dolor, aliquid vel unde impedit ducimus! Porro ut, adipisci odit tempora qui vero.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat ipsa fugit esse odio magni quia delectus inventore nemo voluptate! Labore veritatis doloremque, atque neque itaque voluptates facere impedit molestias alias? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus debitis maiores nesciunt animi deleniti pariatur placeat saepe doloremque, totam, ipsam repudiandae laudantium consequuntur. Natus doloremque cupiditate laboriosam vitae ipsa fugiat. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda deserunt laudantium dolore reiciendis perferendis enim, nihil ipsam tenetur eligendi sequi, explicabo officia aliquid veritatis molestias iste quia voluptatibus. Culpa, cumque. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque dolore voluptatum accusamus rerum aspernatur molestias dolorem quos. Facilis doloremque illo aliquid sed, placeat, debitis corporis, quo repellat harum labore id! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum ad delectus, accusantium deleniti minima nulla dicta nihil dolor, aliquid vel unde impedit ducimus! Porro ut, adipisci odit tempora qui vero.</p>
+
+</body>
+</html>
